@@ -40,5 +40,22 @@ namespace Ecommerce.Controllers
         {
             return _categoryRepo.GetCategoryInsightById(categoryId);
         }
+
+        //Add new category
+        [HttpPost]
+        [Route("AddNewCategory")]
+        public IActionResult AddCategory([FromBody] Category category)
+        {
+            _categoryRepo.CreateCategory(category);
+            return Ok(category);
+        }
+
+        //Get list of category based on popularity(most sales)
+        [HttpGet]
+        [Route("OrderedByMostSales")]
+        public List<CategoryByMostSales> GetCategoryByMostSales()
+        {
+            return _categoryRepo.GetPopularCategory();
+        }
     }
 }

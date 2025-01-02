@@ -17,5 +17,7 @@ namespace Ecommerce.Data_Access_Layer
 
         public DbSet<CategoryInsights> CategoryInsights { get; set; }
 
+        public DbSet<CategoryByMostSales> CategoryByMostSales { get; set; }
+
     }
 }
