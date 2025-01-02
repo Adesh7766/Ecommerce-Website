@@ -1,0 +1,9 @@
+# Ignore build and dependency files 
+/bin 
+/obj 
+/dist 
+/node_modules 
+*.log 
+*.suo 
+*.user 
+*.DS_Store 
