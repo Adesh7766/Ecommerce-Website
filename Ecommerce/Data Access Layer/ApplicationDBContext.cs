@@ -25,5 +25,6 @@ namespace Ecommerce.Data_Access_Layer
 
         public DbSet<CustomerBySpendingRange> CustomerBySpendingRange { get; set; }
 
+        public DbSet<Orders> Orders { get; set; }
     }
 }

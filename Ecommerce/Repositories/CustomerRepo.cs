@@ -59,8 +59,8 @@ namespace Ecommerce.Repositories
         //Update Customer Activeness
         public void UpdateCustomerProfile(int id, Boolean isActive)
         {
-            Customer newCustomer;
-            newCustomer = new Customer();
+            //Customer newCustomer;
+            //newCustomer = new Customer();
 
             var customer = _applicationDBContext.Customers.FirstOrDefault(x => x.CustomerID == id);
 
