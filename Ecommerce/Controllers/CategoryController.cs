@@ -57,5 +57,14 @@ namespace Ecommerce.Controllers
         {
             return _categoryRepo.GetPopularCategory();
         }
+
+        //Remove a category by id
+        [HttpDelete]
+        [Route("RemoveCategoryById/{id}")]
+        public IActionResult RemoveCategory(int id)
+        {
+            _categoryRepo.RemoveCategory(id);
+             return Ok("Category removed successfully");
+        }
     }
 }

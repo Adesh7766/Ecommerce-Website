@@ -19,5 +19,11 @@ namespace Ecommerce.Data_Access_Layer
 
         public DbSet<CategoryByMostSales> CategoryByMostSales { get; set; }
 
+        public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<CustomersByMostOrdersMade> CustomersByMostOrders { get; set; }
+
+        public DbSet<CustomerBySpendingRange> CustomerBySpendingRange { get; set; }
+
     }
 }

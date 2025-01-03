@@ -14,10 +14,13 @@ namespace Ecommerce.Repositories
         //Get insights on categories(total products, average price, total sales) by id
         CategoryInsights? GetCategoryInsightById(int categoryId);
 
-        ////Create a new category(By Admin)
-        //void CreateCategory(Category category);
+        //Create a new category(By Admin)
+        void CreateCategory(Category category);
 
-        ////Sort categories based on popularity(total sales)
-        //void GetPopularCategory();
+        //Sort categories based on popularity(total sales)
+        List<CategoryByMostSales> GetPopularCategory();
+
+        //Delete any category by id
+        void RemoveCategory(int id);    
     }
 }
