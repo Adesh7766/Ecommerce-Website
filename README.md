@@ -1,4 +1,3 @@
-This is a Ecommerce Website made using: 
-Angular (Front End),
+This is a Ecommerce Website made using:
 .Net Web API (Backend),
 Sql Server (Database)
